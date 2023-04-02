@@ -23,8 +23,8 @@ public class PickerDemo {
             System.out.println("Program requires exactly 2 arguments (absolute paths). Please input exactly 2 arguments.");
         } else {
             StringBuilder output = new StringBuilder();
-            List<Order> orders = parseOrdersFile(args[0]);
-            Store store = parseStoreFile(args[1]);
+            List<Order> orders = parseOrdersFile(args[1]);
+            Store store = parseStoreFile(args[0]);
             List<String> pickersNames = store.getPickers();
             for (String name : pickersNames) {
                 Picker picker = new Picker(name);

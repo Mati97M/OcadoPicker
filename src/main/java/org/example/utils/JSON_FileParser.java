@@ -26,7 +26,7 @@ public final class JSON_FileParser {
             JSONObject jsonObject = array.getJSONObject(i);
             JSONObjectToOrder(orders, jsonObject);
         }
-        ListPresenter.printList(orders);
+//        ListPresenter.printList(orders);
         return orders;
     }
 
@@ -34,7 +34,7 @@ public final class JSON_FileParser {
         String inputData = getStringFromFile(fileName);
         JSONObject jsonObject = new JSONObject(inputData);
         Store store = JSONObjectToStore(jsonObject);
-        System.out.println(store);
+//        System.out.println(store);
         return store;
     }
 
